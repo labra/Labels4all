@@ -5,6 +5,9 @@ target
 .target
 bin
 .cache
+.classpath
+.project
+.settings/*
 tmp
 .history
 dist
