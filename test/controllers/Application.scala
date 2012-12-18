@@ -13,8 +13,8 @@ class ApplicationSpec extends Specification { def is =
   "The application should" 									^
   	"respond to plain index with html"						!e1^
   	"respond to search without parameters with BAD_REQUEST"	!e2^
-  	"respond to parameterized search text/html" 			!e3^
-  	"respond to parameterized search text/html and find persona" !e4^
+//  	"respond to parameterized search text/html" 			!e3^
+//  	"respond to parameterized search text/html and find persona" !e4^
   															end
 
   def e1 = {
