@@ -1,0 +1,49 @@
+@(form: Form[(String,String)])(implicit flash: Flash)
+
+<html>
+    <head>
+        <title>Sign in</title>
+    </head>
+    <body>
+        
+        @helper.form(routes.Auth.authenticate) {
+            
+            <h1>Sign in</h1>
+            
+            @form.globalError.map { error =>
+                <p class="error">
+                    @error.message
+                </p>
+            }
+            
+            @flash.get("success").map { message =>
+                <p class="success">
+                    @message
+                </p>
+            }
+            
+            <p>
+                <input type="email" name="email" placeholder="Email" id="email" value="@form("email").value">
+            </p>
+            <p>
+                <input type="password" name="password" id="password" placeholder="Password">
+            </p>
+            <p>
+                <button type="submit" id="loginbutton">Login</button>
+            </p>
+            
+        }
+        
+        <p class="note">
+            Try <em>admin@@example.com</em> with <em>1234</em> as password.
+        </p>
+        <p>
+        	<a href="@routes.Application.index()" class="btn">Cancel</a>
+        </p> 
+        
+            
+    </body>
+</html>
+    
+
+

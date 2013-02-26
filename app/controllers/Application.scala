@@ -10,7 +10,7 @@ import play.api.i18n._
 import anorm._
 import views.html.defaultpages.badRequest
 
-object Application extends Controller {
+object Application extends Controller  with Secured{
   
   var languages : Seq[Lang] = Seq()
     
@@ -26,7 +26,6 @@ object Application extends Controller {
       case Accepts.Xml() => Ok("XML . Languages: " + languages)
       case _ => if (request.accepts("text/turtle")) Ok("Turtle")
                 else Ok(views.html.index(languages,searchForm))
-      
     }
   }
 

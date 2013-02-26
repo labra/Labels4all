@@ -5,6 +5,11 @@
 # Home page
 GET     /                           		controllers.Application.index
 
+# Authentication
+GET 	/login 								controllers.Auth.login
+POST 	/login 								controllers.Auth.authenticate
+GET 	/logout 							controllers.Auth.logout
+
 GET     /search								controllers.Application.searchTranslation
 GET     /format								controllers.Application.format
 GET     /about								controllers.Application.about
