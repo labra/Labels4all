@@ -5,14 +5,31 @@
 # Home page
 GET     /                           		controllers.Application.index
 
+# Authentication
+GET 	/login 								controllers.Auth.login
+POST 	/login 								controllers.Auth.authenticate
+GET 	/logout 							controllers.Auth.logout
+
 GET     /search								controllers.Application.searchTranslation
+GET     /alt                  				controllers.Application.alternative
+GET     /showTrans/:id                 		controllers.Application.showTrans(id: Long)
 GET     /format								controllers.Application.format
 GET     /about								controllers.Application.about
+GET     /about/api							controllers.Application.aboutAPI
+GET     /about/formats						controllers.Application.aboutFormats
+
+GET     /trans/:lang						controllers.Application.getTranslation(lang:String)
+GET     /addTrans/:iri/:lang				controllers.Application.addTrans(iri:String, lang:String)
+GET     /newTrans							controllers.Application.newTrans
+GET     /newAltTrans/:iri/:lang				controllers.Application.newAltTrans(iri:String, lang:String)
+POST    /newTrans 	                 		controllers.Admin.newTranslation
+POST    /newAltTrans 	            		controllers.Admin.newAlternativeTranslation
 
 
 GET     /admin								controllers.Admin.admin
 GET     /admin/iris                  		controllers.Admin.iris
-POST    /admin/iris                  		controllers.Admin.newIRI
+POST    /admin/addIri                  		controllers.Admin.newIRI
+GET     /admin/addIri                  		controllers.Admin.addIRI
 POST    /admin/iris/:id/delete       		controllers.Admin.deleteIRI(id: Long)
 
 GET     /admin/langs                  		controllers.Admin.languages
@@ -20,8 +37,15 @@ POST    /admin/langs                  		controllers.Admin.newLang
 POST    /admin/langs/:id/delete       		controllers.Admin.deleteLang(id: Long)
 
 GET     /admin/trans                  		controllers.Admin.translations
-POST    /admin/trans                  		controllers.Admin.newTranslation
 POST    /admin/trans/:id/delete       		controllers.Admin.deleteTrans(id: Long)
+
+
+GET  	/loadLangs/:iri            			controllers.Application.loadLangs(iri: String)
+GET  	/vote/:id/:vote						controllers.Application.vote(id: Long,vote: String)
+
+
+# Javascript routing
+GET /javascriptRoutes    controllers.Application.javascriptRoutes
 
 # Map static resources from the /public folder to the /assets URL path
 GET     /assets/*file               controllers.Assets.at(path="/public", file)

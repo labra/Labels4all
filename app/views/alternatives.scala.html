@@ -1,0 +1,37 @@
+@(translations: List[ViewTranslation],iri:String, langcode:String)(implicit lang: Lang)
+
+@import helper._
+
+@main("Labels4all") {
+    
+    <h2 class="admin">@Messages("Alternative")</h2>
+    
+    <table class="alt" summary="@Messages("Alternative")">
+    <thead>
+    <tr>
+      <th scope="col" abbr="IRI">IRI</th>
+      <th scope="col" abbr="Lang">@Messages("LangCode")</th>
+      <th scope="col"  abbr="Label">@Messages("Label")</th>
+      <th scope="col" abbr="votes">@Messages("Votes")</th>
+      <th scope="col" abbr="show"></th>
+      
+     </tr>
+    </thead>
+     <tbody>
+        @translations.map { t =>
+        <tr>
+            <td>@t.iri</td>
+            <td>@t.langCode</td>
+            <td>@t.label</td>
+            <td>@t.votes</td>
+            <td>@form(routes.Application.showTrans(t.id)) {
+                    <input type="submit" id="show" value="@Messages("Show")">
+                }</td>
+        </tr>
+        }
+    </tbody>
+    </table>
+	<div class="link">
+	  <a href="@routes.Application.newAltTrans(iri,langcode)">@Messages("AddTrans")</a>
+    </div>
+}

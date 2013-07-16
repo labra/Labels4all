@@ -1,4 +1,4 @@
-import java.sql.{Connection, DriverManager, ResultSet};
+import java.sql.{ Connection, DriverManager, ResultSet };
 
 trait db {
 
@@ -48,5 +48,5 @@ object db extends db {
   def withTransaction[A](block: Connection => A): A = {
     this.withTransaction("default")(block)
   }
-  
+
 }

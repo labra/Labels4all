@@ -1,38 +1,33 @@
-@(langs: List[Language], langForm: Form[Language], defaultLanguage: Lang)
+@(langs: List[Language], langForm: Form[Language], defaultLanguage: Lang)(implicit lang: Lang)
 
 @import helper._
 
 @main("Labels4all") {
     
-    <h2>Admin Languages</h2>
-
-    <p>Number of languages: @langs.size</h2>
-    <ul>
-        @langs.map { lang =>
-            <li>
-                @lang.langCode, @lang.langName
+    <h2>@Messages("Admin") @Messages("Languages")</h2>
+    <p class="number"><a href="@routes.Admin.admin" class="new noborder">@Messages("Back")</a>@Messages("NumLang") @langs.size</p>
+	 <table class="langs" summary="@Messages("Languages")">
+	    <thead>
+	    <tr>
+	      <th scope="col" abbr="name">@Messages("Language")</th>
+	      <th scope="col" abbr="code">@Messages("LangCode")</th>
+	     </tr>
+	    </thead>
+	     <tbody>
+	     @langs.map { lang =>
+            <tr>
+                 <td>@lang.langName </td>
                 
-                @form(routes.Admin.deleteLang(lang.id.get)) {
-                    <input type="submit" value="@Messages("Delete")(defaultLanguage)">
-                }
-            </li>
+                 <td>@lang.langCode</td>
+            </tr>
         }
-    </ul>
-    
-    <h2>Add language</h2>
-    
-    @form(routes.Admin.newLang()) {
-        
-        <fieldset>
-            @inputText(langForm("langCode"), '_label -> "Language code")
-            @inputText(langForm("langName"), '_label -> "Language name")
-        </fieldset>
-        
-        <div class="actions">
-            <input type="submit" value="Create language" class="btn primary"> or 
-            <a href="@routes.Application.index()" class="btn">Cancel</a> 
-        </div>
-    }
-
-    
+    </tbody>
+    </table>   
+       
 }
+
+<script language="javascript">
+	 function back() {
+		   parent.history.back();
+	 }
+</script>

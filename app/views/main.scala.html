@@ -1,26 +1,36 @@
-@(title: String)(content: Html)
+@(title: String)(content: Html)(implicit lang: Lang)
 
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
     <head>
         <title>@title</title>
         <link rel="stylesheet" media="screen" href="@routes.Assets.at("stylesheets/main.css")">
-        <link rel="shortcut icon" type="image/png" href="@routes.Assets.at("images/favicon.png")">
+        <link rel="shortcut icon" type="image/png" href="@routes.Assets.at("images/logo.png")">
         <script src="@routes.Assets.at("javascripts/jquery-1.7.1.min.js")" type="text/javascript"></script>
+        <script type="text/javascript" src="@routes.Application.javascriptRoutes"></script>
     </head>
     <body>
     <div class="title">
-    	<h1>Labels4all.info</h1>
+    	<a href="@routes.Application.index"><h1>Labels4all.info</h1></a>
     </div>
     
+   <div class = "main-content">
         @content
-    
-    <nav>
-     <ul>
-     <li><a href="@routes.Admin.admin">Admin</a></li>
-     <li><a href="@routes.Application.about">About</a></li>
-     </ul>
-    </nav>
+   </div>
+   	<nav>
+     	<hr class="line" />          
+     	<ul>  
+		     <li><a href="@routes.Application.index">@Messages("Home")</a></li>
+		     <li><a href="@routes.Auth.login">Login</a></li>
+				<li><a href="@routes.Admin.admin">@Messages("Admin")</a></li>
+			
+		     <li><a href="@routes.Application.about">@Messages("About")</a></li>
+     	</ul>
+    </nav> 	       
+    <div id="logo"> 
+    	<a id="weso-logo" alt="@Messages("weso")" title="@Messages("weso")" href="http://www.weso.es">
+			<image src="@routes.Assets.at("images/logo.png")" style="width: 50px; opacity:1;"></a>
+    </div>
     </body>
 </html>

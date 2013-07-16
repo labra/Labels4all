@@ -1,0 +1,10 @@
+@(throwable: Throwable)(implicit lang: Lang)
+
+@import helper._
+
+@main("Labels4all") {
+    
+<h2>onError Happened</h2>
+<p class="center">@throwable.getMessage</p>  
+
+}

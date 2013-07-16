@@ -1,0 +1,239 @@
+﻿en English
+es Spanish
+ko Korean
+sn Shona
+cv Chuvash
+kj Kwanyama
+kj Kwanyama dialect
+kj Kuanyama
+qu Quechuan
+qu Quechua
+nr South Ndebele
+nr Ndebele, South
+lg Luganda
+lg Ganda
+de German
+de New High German
+tk Turkmen
+ch Chamorro
+lv Latvian
+ln Lingala
+pt Portuguese
+su Sundanese
+mn Mongolian
+na Nauru
+yi Yiddish
+te Telugu
+fy Frisian, Western
+fy Western Frisian
+ta Tamil
+st Sotho, Southern
+st Southern Sotho
+eu Basque
+ca Catalan
+ks Kashmiri
+sq Albanian
+th Thai
+ay Aymara
+ff Fulah
+da Danish
+sl Slovenian
+sd Sindhi
+sw Swahili
+cu Slavonic, Church
+cu Slavic, Church
+cu Church Slavic
+cu Church Slavonic
+bi Bislama
+sm Samoan
+ga Irish
+fi Finnish
+af Afrikaans
+vi Vietnamese
+tl Tagalog
+rm Romansh
+rw Kinyarwanda
+ht Haitian Creole
+ht Haitian
+ht Creole, Haitian
+ja Japanese
+dz Dzongkha
+ki Gikuyu
+ki Kikuyu
+pa Punjabi
+pa Panjabi
+mg Malagasy
+nl Dutch
+nl Flemish
+ik Inupiaq
+hz Herero
+ia Interlingua
+oc Occitan
+oc Occitan (post 1500)
+az Azerbaijani
+az Azeri
+cr Cree
+ar Arabic
+bo Standard Tibetan
+bo Tibetan
+om Oromo
+tg Tajik
+es Castilian
+ms Malay
+oj Ojibwa
+gl Galician
+kr Kanuri
+nb Bokmål
+nb Norwegian Bokmål
+nb Bokmål, Norwegian
+nn Nynorsk
+nn Norwegian Nynorsk
+co Corsican
+be Belarusian
+km Khmer, Central
+km Central Khmer
+km Khmer
+eo Esperanto
+id Indonesian
+ie Interlingue
+ie Occidental
+ab Abkhazian
+br Breton
+xh Xhosa
+za Chuang
+za Standard Zhuang
+za Zhuang
+ty Tahitian
+hi Hindi
+bg Bulgarian
+ka Georgian
+lt Lithuanian
+ts Tsonga
+se Northern Sami
+se Sami, Northern
+sa Sanskrit
+sh Serbo-Croatian
+sc Sardinian
+tw Asante dialect
+tw Twi
+is Icelandic
+so Somali
+sg Sango
+zu Zulu
+ig Igbo
+gu Gujarati
+ha Hausa
+ug Uighur
+ug Uyghur
+mt Maltese
+gn Guarani
+ii Nuosu
+ii Yi, Sichuan
+ii Sichuan Yi
+tn Tswana
+ve Venda
+ku Kurdish
+tt Tatar
+io Ido
+el Greek
+sv Swedish
+bs Bosnian
+av Avaric
+kl Greenlandic
+kl Kalaallisut
+ps Pashto
+ps Pushto
+cy Welsh
+ce Chechen
+bn Bengali
+lo Lao
+ho Hiri Motu
+my Burmese
+am Amharic
+mh Marshallese
+fo Faroese
+it Italian
+gv Manx
+kg Kongo
+mr Marathi
+fr French
+hu Hungarian
+sr Serbian
+ny Chichewa
+ny Nyanja
+ny Chewa
+nd North Ndebele
+nd Ndebele, North
+kv Komi
+uz Uzbek
+fj Fijian
+rn Rundi
+rn Kirundi
+lu Luba-Katanga
+cs Czech
+pl Polish
+mk Macedonian
+ky Kirghiz
+ky Kyrgyz
+iu Inuktitut
+gd Gaelic
+gd Gaelic, Scottish
+gd Canadian Gaelic
+gd Scottish Gaelic
+kn Kannada
+li Limburgish
+li Limburgan
+li Limburger
+ba Bashkir
+sk Slovak
+ro Romanian
+ne Nepali
+zh Chinese
+ng Ndonga
+ng Ndonga dialect
+as Assamese
+jv Javanese
+or Oriya
+aa Afar
+hr Croatian
+he Hebrew
+he Samaritan Hebrew
+yo Yoruba
+ur Urdu
+ss Swati
+la Latin
+ti Tigrinya
+no Norwegian
+dv Maldivian
+dv Dhivehi
+dv Divehi
+uk Ukrainian
+hy Armenian
+pi Pali
+lb Letzeburgesch
+lb Luxembourgish
+et Estonian
+kk Kazakh
+ae Avestan
+os Ossetian
+os Ossetic
+mi Maori
+si Sinhalese
+si Sinhala
+ee Ewe
+wa Walloon
+tr Turkish
+bm Bambara
+to Tongan
+to Tonga
+to Tonga (Tonga Islands)
+nv Navaho
+nv Navajo
+wo Wolof
+ml Malayalam
+ak Akan
+ru Russian
+an Aragonese
+fa Persian
+vo Volapük
+kw Cornish

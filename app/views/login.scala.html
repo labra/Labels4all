@@ -1,0 +1,38 @@
+@(form: Form[(String,String)])(implicit flash: Flash, lang: Lang)
+
+
+@main("Labels4all") {
+           
+        @helper.form(routes.Auth.authenticate) {
+            
+            <h2>Login</h2>
+            
+            <div id="stylized" class="myform">
+            @form.globalError.map { error =>
+                <p class="error">
+                    @error.message
+                </p>
+            }
+            
+            @flash.get("success").map { message =>
+                <p class="success">
+                    @message
+                </p>
+            }
+            
+            
+                <label for="email">@Messages("Email")
+				</label>
+				<input type="email" name="email" id="email">            
+                <label for="password">@Messages("Pass")
+				</label>
+                <input type="password" name="password" id="password" >
+            <p>
+            <button type="submit" id="loginbutton" alt="login">Login</button>
+            </p>
+            
+        }
+        </div>
+        
+}
+
