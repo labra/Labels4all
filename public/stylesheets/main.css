@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /*GENERAL*/
 
 a {color: #7777FF;}
@@ -125,4 +126,468 @@ div.link a:last-child {    border-left: none;}
 span.res span {    color: blue;}
 span.res {   color: #333333;    font-size: 1.4em;}
 h3.result { color: #888888; text-align: left;}
+=======
+body {
+	}
+	a {
+    color: #7777FF;}
+.main-content{
+    background: none repeat scroll 0 0 white;
+    margin-left: 11%;
+    margin-right: 13%;}
+/*CABECERA*/
+div.title h1 {
+    color: #888888;
+    font-family: 'Lucida Grande',sans-serif;
+    font-size: 2em;
+    text-align: center;
+}
+div.title a {
+    text-decoration: none;
+}
+h2 {
+    color: #333333;
+    font-family: 'Tahoma',sans-serif;
+    margin-bottom: 5%;
+    margin-top: -10px;
+    text-align: center;
+    font-size: 1em;
+}
+
+fieldset input{
+    font-family: 'Courier New';
+    font-size: smaller;
+    margin-left: -40px;
+    max-width: 502px;
+}
+input{
+ font-family: 'Trebuchet MS';
+     }
+div.links {
+    margin-top: 70px;
+    text-align: center;
+}
+div.links a {
+    font-size: 1.2em;
+    letter-spacing: 0.1em;
+    padding: 0 0.5em;
+    text-decoration: none;
+}
+div.links a:hover {
+    font-family: monospace;
+    text-decoration: underline;
+}
+div.links a:visited {
+    outline: 0 none;
+    text-decoration: none;
+}
+div.links a:last-child {
+    border-left: 2px solid;
+}
+
+div.content {
+     margin-left: 18%;
+    margin-top: 76px;
+    text-align: center;
+    width: 55%;
+    }
+dl {
+    font-family: -moz-fixed;
+        font-weight: bolder;
+    font-size: 2em;
+}
+dd.info {
+    visibility: hidden;
+    height:6px;
+}
+span.res span {
+    color: blue;
+}
+span.res {
+    color: #333333;
+    font-size: 1.4em;
+}
+h3.result {
+    color: #888888;
+    text-align: left;
+}
+
+h3 {
+    font-family: 'Lucida Grande',sans-serif;
+    font-size: 0.8em;
+    font-weight: bold;
+    margin: 0;
+    text-align: center;
+}
+h3 a{
+   opacity: 0.8;
+    text-decoration: none;}
+
+fieldset {
+    margin-left: 18%;
+     width: -moz-min-content;
+     max-width: 505px;
+     min-width: 505px;
+     padding:25px;
+     font-size:0.8em;
+}
+.examples {
+    font-size: 12px;
+	margin-top: -17px;
+    margin-bottom: 25px;
+    text-align: left;
+}
+.exlink {
+    margin-left: 8px;
+}
+.exlink a {
+    color: #888888;
+}
+.exlink a:hover {
+    color: #CD5C5C;
+}
+.exlink a:visited {
+    outline: 0 none;
+    text-decoration: none;
+}
+.exlang {
+    color: #888888;
+    
+}
+#search {
+       background-color: #616161;
+    border: medium none;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    height: 42px;
+    margin-left: 39%;
+    padding: 0 1.25em;
+    text-transform: uppercase;
+}
+#create {
+        background-color: #616161;
+    border: medium none;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    height: 42px;
+    margin-left: 20%;
+padding: 0 1em;
+    text-transform: uppercase;
+}
+#logo {
+    bottom: 10px;
+    left: 15px;
+    position: fixed;
+    z-index: -1;
+}
+.logos {
+    margin-left: 26%;
+}
+.logos a {
+    margin-right: 70px;
+}
+nav {
+    margin-top: 6%;
+    text-align:center;
+}
+nav ul{
+    margin:0;
+    padding: 0;
+    }
+nav ul li {
+    border-right: 1px solid #CCCCCC;
+    color: #888888;
+    display: inline;
+    font-size: 18px;
+    list-style-type: none;
+}
+nav ul li a {
+    text-decoration: none;
+padding: 10px 20px;  
+    color:black;
+  
+}
+nav li a:hover {
+    color:#888888;
+}
+nav li:last-child {
+    border: medium none;
+}
+nav li a:visited {
+    text-decoration: none;
+}
+.newIri dl {
+    margin: 25px 0 0;
+    text-align: center;
+}
+#newIri {
+    float: left;
+    margin-left: 5%;
+    margin-top: 55px;
+}
+.newIri {
+    margin-left: 40%;
+}
+.number {
+    font-family: Gill Sans,Verdana;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    line-height: 14px;
+	margin-top: 60px;
+    text-transform: uppercase;
+    text-align:center;
+}
+table, td, th {
+    border: medium none;
+    border-collapse: collapse;
+    margin: 0;
+    padding: 0;
+}
+
+table.trans {    
+ width: -moz-fit-content;
+}
+table.alt {
+    text-align: center;
+    width: 100%;
+}
+table.formats {
+    margin-left: 28%;
+}
+table.iris {
+    margin-left: 25%;
+}
+table.langs {
+    margin-left: 38%;
+}
+table {
+    border: medium none;
+    color: #222222;
+    font-family: Georgia,"Times New Roman",Times,serif;
+    font-weight: normal;
+    margin-bottom: 0;
+    margin-top: 5px;
+    text-align: center;
+}
+td, th {
+    font-weight: normal;
+    padding: 0.2em 0.5em;
+    vertical-align: top;
+}
+thead th {
+    border-bottom: 1px solid #000000;
+    font-size: 90%;
+    font-weight: bold;
+    margin-bottom: 5px;
+    vertical-align: bottom;
+}
+tbody th, td {
+    text-align: left;
+
+    border-right: 1px solid #000000;
+}
+tbody td, tbody th {
+    padding: 7px 10px;
+}
+tbody th {
+    border-left: 1px solid #000000;
+}
+tfoot td, tfoot th {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-color: #000000 -moz-use-text-color -moz-use-text-color;
+    border-image: none;
+    border-right: medium none;
+    border-style: solid none none;
+    border-width: 1px medium medium;
+    margin-top: 5px;
+}
+caption {
+    font-size: 120%;
+    font-weight: bold;
+    margin: 5px;
+    text-align: left;
+}
+table a:link {
+    color: #336633;
+}
+table a:visited {
+    color: #669966;
+}
+table a:hover {
+    text-decoration: none;
+}
+table a:active {
+    color: #000000;
+}
+.line {
+    background-color: #888888;
+    color: #888888;
+    width: 360px;
+}
+
+.myform {
+    margin: 60px auto 0;
+    width: 400px;
+}
+#stylized h1 {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+#stylized p {
+    color: #666666;
+    font-size: 11px;
+    padding-bottom: 10px;
+}
+#stylized label {
+    display: block;
+    float: left;
+    font-weight: bold;
+    text-align: right;
+    width: 140px;
+}
+#stylized .small {
+    color: #666666;
+    display: block;
+    font-size: 11px;
+    font-weight: normal;
+    text-align: right;
+    width: 140px;
+}
+#stylized input {
+    border: 1px solid #616161;
+    float: left;
+    font-size: 12px;
+    margin: -1px -4px 19px 12px;
+    padding: 4px 2px;
+    width: 200px;
+    }
+.new{
+	margin-left:50px;
+		margin-right:50px;
+	
+	text-transform: none;
+	text-decoration:none;
+	    font-size: larger;
+}
+
+#stylized button {
+    background-color: #666666;
+    clear: both;
+    color: #FFFFFF;
+    font-size: 11px;
+    font-weight: bold;
+    height: 31px;
+    line-height: 31px;
+    margin-left: 150px;
+    text-align: center;
+    width: 125px;
+}
+
+/*RESULT PAGE*/
+.votes{
+	margin-left: 660px;
+    margin-top: -75px;
+}
+.showVotes{
+	font-family: Georgia,"Times New Roman",Times,serif;
+    font-size: larger;
+    font-weight: normal;
+    margin-left: 6px;
+    margin-top: -5px;
+}
+.votes li{
+    list-style-type: none;	
+    padding: 2px;
+}
+.center {
+    text-align: center;
+}
+.style{
+font-family: Georgia,"Times New Roman",Times,serif;
+font-weight: normal;
+}
+
+
+
+div.link {
+    margin-top: 70px;
+    text-align: center;
+}
+div.link a {
+    font-size: 1.2em;
+    letter-spacing: 0.1em;
+    padding: 0 0.5em;
+    text-decoration: none;
+}
+div.link a:hover {
+    font-family: normal;
+    text-decoration: underline;
+}
+div.link a:visited {
+    outline: 0 none;
+    text-decoration: none;
+}
+div.link a:last-child {
+    border-left: none;
+}
+#stylized .error{
+    color: red;
+    font-size: 14px;
+    margin-left: 152px;
+    padding-bottom: 10px;
+}
+dd.error {
+    color: red;
+    font-size: 0.8em;
+    margin-left: 1px;
+}
+.cancel{
+	 border-left: 1px solid;
+    font-size: 19px;
+    margin-left: 8px;
+    padding-left: 11px;
+    margin-top: -10px;
+}
+.about{
+	line-height: 1.35em;
+	font-family: Verdana;
+    font-size: medium;
+    margin-left: 21%;
+    margin-right: 18%;
+    margin-top: 5%;
+}
+.about li {
+    margin-bottom: 3%;
+}
+
+.big {
+    font-size: 2em;
+    margin-top: 10%;
+}
+.resultFormat{
+    color: #7B7B7B;
+    margin-top: 58px;
+    text-align: center;
+}
+.noborder{
+ border: medium none !important;
+ }
+ .margintop{
+ 	margin-top: 8%;
+ }
+ 
+ /*Pagina result*/
+ .voteButton{
+ padding:0;
+ }
+>>>>>>> 1f9e0faacfa469390c82bb236b9c912a4305ede5
  
