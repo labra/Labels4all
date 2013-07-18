@@ -1,0 +1,50 @@
+@()(implicit lang: Lang)
+
+@import helper._
+
+@main("Labels4all") {
+    
+<h2>@Messages("about.formats")</h2>
+<div class="about">
+ 
+
+<p>@Messages("about.format.p1")</p>
+<p>@Messages("about.format.p2")</p>
+
+
+	<table class="formats">
+	    <thead>
+	    <tr>
+	      <th scope="col">@Messages("about.format.format")</th>
+	      <th scope="col">@Messages("about.format.desc")</th>
+	     </tr>
+	    </thead>
+	     <tbody>
+            <tr>
+            	<td>text/turtle</td>
+            	<td><a href="http://www.w3.org/TeamSubmission/turtle/">Turtle</a></td>
+            </tr>
+    		<tr>
+            	<td>text/n3</td>
+            	<td><a href="http://www.w3.org/2001/sw/RDFCore/ntriples/">N-Triples</a></td>
+            </tr>
+            <tr>
+            	<td>text/xml</td>
+            	<td><a href="http://www.w3.org/TR/REC-rdf-syntax/">XML</a></td>
+            </tr>
+            <tr>
+            	<td>text/txt</td>
+            	<td>TXT</td>
+            </tr>
+            <tr>
+            	<td>text/html</td>
+            	<td><a href="http://www.w3.org/TR/REC-html40/">HTML</a></td>
+            </tr>
+            <tr>
+            	<td>application/json</td>
+            	<td><a href="http://www.w3.org/2011/rdf-wg/wiki/TF-JSON">TF-JSON</a></td>
+            </tr>
+    	</tbody>
+	</table> 
+	</div>
+}

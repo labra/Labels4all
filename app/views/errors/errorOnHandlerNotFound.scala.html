@@ -1,0 +1,10 @@
+@(request: RequestHeader)(implicit lang: Lang)
+
+@import helper._
+
+@main("Labels4all") {
+    
+   <h2>@Messages("ErrorHandler")</h2>
+ 	 <p class="center margintop">@request.path</p>  
+
+}

@@ -1,0 +1,20 @@
+@()(implicit lang: Lang)
+
+@import helper._
+
+@main("Labels4all") {
+    
+<h2>Error</h2>
+<p class="center margintop">@Messages("error.iri.duplicate")</p>
+	<div class="links">
+    	<a href="javascript:back();" class="cancel noborder">@Messages("Back")</a> 
+	</div> 
+	   
+}
+
+
+<script language="javascript">
+	 function back() {
+		   parent.history.back();
+	 }
+</script>

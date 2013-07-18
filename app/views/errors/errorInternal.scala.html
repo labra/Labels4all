@@ -1,0 +1,8 @@
+@(throwable: Throwable)(implicit lang: Lang)
+@import helper._
+
+@main("Labels4all") {
+    
+  <h2>@Messages("Error500")</h2>	
+  <p class ="center margintop">@throwable.getMessage</p>  
+}

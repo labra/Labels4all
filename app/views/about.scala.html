@@ -1,14 +1,36 @@
-@()
+@()(implicit lang: Lang)
 
 @import helper._
 
 @main("Labels4all") {
     
-<h1>Labels4all</h1>
-<p>This site has been developed by 
- <a href="http://www.di.uniovi.es/~labra">Jose E. Labra</a>
- and Álvaro Suárez
- (<a href="http://www.weso.es">WESO Research Group</a>)
-</p>
+<h2>@Messages("About")</h2>
+<div class="about">
+ 
 
+<p>@Messages("about.text.p1")</p>
+<p>@Messages("about.text.p2")</p>
+<ul>
+<li><a href="http://labels4all.info/trans/es?iri=http://purl.org/dc/terms/Agent&format=text/txt">http://labels4all.info/trans/es?iri=http://purl.org/dc/terms/Agent&format=text/txt</a></li>
+<li><a href="http://labels4all.info/trans/es?iri=http://xmlns.com/foaf/0.1/name">http://labels4all.info/trans/es?iri=http://xmlns.com/foaf/0.1/name</a></li>
+</ul>
+<p>@Messages("about.text.p3")</p>
+<p>@Messages("about.text.p4") <a href="http://www.di.uniovi.es/~labra">Jose E. Labra</a>
+ @Messages("about.text.and") Álvaro Suárez
+ (<a href="http://www.weso.es">@Messages("weso")</a>)@Messages("about.text.p4.de") @Messages("about.text.p4.2") @Messages("uniovi").</p>
+
+<div class="logos">
+	<a id="weso-logo" alt="@Messages("weso")" title="@Messages("weso")" href="http://www.weso.es">
+			<image src="@routes.Assets.at("images/logo.png")" style="width: 70px;">
+	</a>
+	<a id="uniovi-logo" alt="@Messages("uniovi")" title="@Messages("uniovi")" href="http://www.uniovi.es">
+			<image src="@routes.Assets.at("images/logo.jpg")" style="width: 86px;">
+	</a>
+</div>
+<p>@Messages("about.others")</p>
+<ul>
+	<li><a href="@routes.Application.aboutFormats">@Messages("about.formats")</a></li>
+	<li><a href="@routes.Application.aboutAPI">@Messages("about.api")</a></li>
+</ul>
+</div>
 }

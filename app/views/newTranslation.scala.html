@@ -1,0 +1,62 @@
+@(langs: List[Language],translationForm: Form[ViewTranslation])(implicit lang: Lang,flash: Flash)
+
+@import helper._
+
+@main("Labels4all") {
+    
+    <h2>@Messages("AddTrans")</h2>
+
+    @form(routes.Admin.newTranslation) {
+        
+        <fieldset>
+        	<input type="hidden" id="id" name="id" value='0' >  
+            @inputText(translationForm("iri"), 'type -> "url",'size -> 50,'_label -> "IRI")
+            @if(flash.data.contains("iri")){
+            <div id="prueba" class="examples ">@Messages("Suggestion"):
+		 	<span class="exlink"> <a id="irilink" href="javascript:setIri();">@flash.get("iri")</a></span>
+		 	</div> 
+		 	}
+            @inputText(translationForm("langCode"), '_label -> Messages("Language"),'list -> "langCodeDatalist")
+			@if(flash.data.contains("lang")){
+            <div id="prueba" class="examples">@Messages("Suggestion"):
+		 	<span class="exlink"> <a id="langlink" href="javascript:setLang();">@flash.get("lang")</a></span>
+		 	</div> 
+		 	}
+			<datalist id="langCodeDatalist">   @langs.map { lang =>
+			        <option>
+			          @lang.langCode
+			         </option>
+			    }
+			</datalist>
+            @inputText(translationForm("label"), '_label -> Messages("Label"))
+            <input type="hidden" name="votes" id="votes" value='1' >
+            <div class="actions">
+            	<input id="create" type="submit" value="@Messages("CreateTrans")" class="btn primary"> 
+            	<a href="@routes.Application.index()" class="cancel">@Messages("Cancel")</a> 
+        	</div>  
+        </fieldset>
+        
+        
+    }    
+
+<script type="text/javascript">
+
+
+function setIri(){
+	$("#iri").attr("value", document.getElementById("irilink").innerHTML);	
+	$("#iri").focus();
+}
+function setLang(){
+	$("#langCode").attr("value", document.getElementById("langlink").innerHTML);
+	$("#langCode").focus();
+}
+
+function getParameterByName(name){
+console.log(name);
+    var name1 = name.replace(/[\[]/, "\\\[").replace(/[\]]/, "\\\]");
+    var regex = new RegExp("[\\?&]" + name1 + "=([^&#]*)"),
+        results = regex.exec(location.search);
+    return results == null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+}
+</script>
+}

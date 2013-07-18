@@ -1,4 +1,4 @@
-@(iris: List[IRI], iriForm: Form[String])
+@(iris: List[IRI], iriForm: Form[String])(implicit lang: Lang)
 
 @import helper._
 
@@ -6,27 +6,36 @@
     
     <h2>Admin IRIs</h2>
     
-    <p>Number of IRIs: @iris.size</p>
-    <ul>
+    <p class="number"><a href="@routes.Admin.admin" class="new noborder">@Messages("Back")</a>@Messages("NumIris") @iris.size <a class="new" href="@routes.Admin.addIRI">@Messages("AddIri")</a>
+    </p>            
+    
+    <table class="iris" summary="IRIs">
+    <thead>
+    <tr>
+      <th scope="col" abbr="IRI">IRI</th>
+      <th scope="col" abbr="del"></th>
+     </tr>
+    </thead>
+     <tbody>
         @iris.map { iri =>
-            <li>
-                @iri.iriName
+            <tr>
+                 <td>@iri.iriName </td>
                 
-                @form(routes.Admin.deleteIRI(iri.id.get)) {
-                    <input type="submit" value="Delete">
-                }
-            </li>
+                 <td>@form(routes.Admin.deleteIRI(iri.id.get)) {
+                    <input type="submit" value="@Messages("Delete")">
+                } </td>
+            </tr>
         }
-    </ul>
+     </tbody>
+    </table>
     
-    <h2>IRI</h2>
     
-    @form(routes.Admin.newIRI) {
-        
-        @inputText(iriForm("iriName"), '_label -> "New IRI") 
-        
-        <input type="submit" value="@Messages("Create") ">
-        
-    }
     
+
+
+<script language="javascript">
+	 function back() {
+		   parent.history.back();
+	 }
+</script>
 }

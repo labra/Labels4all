@@ -25,6 +25,7 @@ class IRISpec extends Specification {
       IRI.create(foafPerson)
       val id = IRI.lookup(foafPerson)
       id must beSome  
+      IRI.all().size must be_==(1)
     }
    }
 
@@ -55,6 +56,24 @@ class IRISpec extends Specification {
       IRI.delete(Id(id.get))
       val id2 = IRI.lookup(foafPerson)
       id2 must beNone
+    }
+   }
+  
+  "delete IRI with related translation" in {
+    running(FakeApplication(additionalConfiguration = inMemoryDatabase())) {
+      val foafPerson = "http://xmlns.com/foaf/0.1/Person"
+      val foafProject = "http://xmlns.com/foaf/0.1/Project"
+      IRI.create(foafPerson)
+      IRI.create(foafProject)
+    
+      Language.create("es","castellano")
+      val idLang = Language.lookup("es")
+      val idIRI = IRI.lookup(foafPerson)
+      
+      Translation.create(idIRI.get,idLang.get,"Persona",1)
+      IRI.all().size must be_==(2)
+      //IRI.delete(Id(idIRI.get))
+      IRI.all().size must be_==(2)
     }
    }
 
