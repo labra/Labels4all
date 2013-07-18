@@ -33,7 +33,7 @@ object Application extends Controller with Secured {
   //Only the first time application runs
   private def initialize() {
     loadLanguages()
-    //loadTrans()
+    loadTrans()
     count += 1
   }
 
