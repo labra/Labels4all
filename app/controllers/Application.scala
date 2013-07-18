@@ -43,7 +43,7 @@ object Application extends Controller with Secured {
    * @return
    */
   private def loadLanguages() {
-    val s = io.Source.fromFile("doc/langs.txt")
+    val s = io.Source.fromFile("doc/langs.txt", "UTF-8")
     s.getLines.foreach((line) => {
       val array = line.split(" ")
       if (array.length == 3)
@@ -56,7 +56,7 @@ object Application extends Controller with Secured {
   //Delete all the translations and load default
   private def loadTrans() {
     Translation.deleteALL()
-    val s = Source.fromFile("doc/trans.txt")
+    val s = Source.fromFile("doc/trans.txt", "UTF-8")
     s.getLines.foreach((line) => {
       val array = line.split("\t")
       val lang = array(1).split("-");
