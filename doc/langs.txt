@@ -1,4 +1,4 @@
-﻿en English
+en English
 es Spanish
 ko Korean
 sn Shona
