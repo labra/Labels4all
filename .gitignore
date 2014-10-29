@@ -12,3 +12,7 @@ tmp
 .history
 dist
 test*.db
+project/activator-defaults-shim.sbt
+project/activator-play-shim.sbt
+project/activator-sbt-eclipse-shim.sbt
+project/activator-sbt-idea-shim.sbt
