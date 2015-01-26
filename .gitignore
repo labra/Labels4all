@@ -16,3 +16,9 @@ project/activator-defaults-shim.sbt
 project/activator-play-shim.sbt
 project/activator-sbt-eclipse-shim.sbt
 project/activator-sbt-idea-shim.sbt
+/.idea
+/*.iml
+/out
+/.idea_modules
+/RUNNING_PID
+
