@@ -12,5 +12,3 @@ libraryDependencies ++= Seq(
   cache,
   ws
 )
-
-libraryDependencies += "com.typesafe.slick" %% "slick" % "2.1.0"
