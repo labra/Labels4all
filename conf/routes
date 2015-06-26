@@ -3,7 +3,22 @@
 # ~~~~
 
 # Home page
-GET     /                           controllers.Application.index
+GET     /                                controllers.Application.index
+
+# API
+GET  /api/v1/iris/:iriName               controllers.api.v1.IRIs.details(iriName: String, lang: List[String])
+GET  /api/v1/iris/:iriName/:langCode     controllers.api.v1.IRIs.detailsWithLang(iriName: String, langCode: String)
+PUT  /api/v1/iris/:iriName               controllers.api.v1.IRIs.create(iriName: String)
+POST /api/v1/iris/:iriName               controllers.api.v1.IRIs.create(iriName: String)
+
+GET  /api/v1/languages                   controllers.api.v1.Languages.list(page: Int ?= 1)
+GET  /api/v1/languages/:langCode         controllers.api.v1.Languages.details(langCode: String)
+
+POST /api/v1/vocabularies/import         controllers.api.v1.Vocabularies.insert()
+POST /api/v1/vocabularies/export         controllers.api.v1.Vocabularies.export()
+POST /api/v1/vocabularies/stats          controllers.api.v1.Vocabularies.stats()
+
+GET  /api/v1/tickets/:ticket             controllers.api.v1.Jobs.redeemTicket(ticket: Long)
 
 # Map static resources from the /public folder to the /assets URL path
-GET     /assets/*file               controllers.Assets.at(path="/public", file)
+GET     /assets/*file                   controllers.Assets.at(path="/public", file)
